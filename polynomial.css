@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(56, 52, 52);
+    color:white;
+    font-family:"Poppins";
+    text-align:center;
+}
+h4{
+    font-size:2rem;
+    margin: 0px;
+}
+
+h1{
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+#choice{
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+input.polynomialInput{
+    border-radius: 10%;
+    font-size: 2rem;
+    font-family: "Poppins";
+    text-align: right;
+    width: 10%;
+}
+
+#polynomial{
+    font-size: 2rem;
+}
+input{
+    border-radius: 5%;
+}
+
+button{
+    font-size:2rem;
+    border-radius: 20%;
+    font-family: "Poppins";
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background-color: rgb(78, 73, 73);
+}
+
+#submit{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#roots{
+    margin-top: 3%;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+}
+
+#graph{
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 60%;
+}
+
+pre{
+    font-family: 'Poppins';
+    
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    input.polynomialInput{
+        font-size: 1rem;
+    }
+    #polynomial{
+        font-size: 1rem;
+    }
+    button{
+        font-size:1rem;
+    }
+    #graph{
+        width: 95%;
+        margin-left:0%;
+    }
+
+}

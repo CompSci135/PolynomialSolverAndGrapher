@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynomial Solver</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="polynomial.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algebrapi/1.0.0/algebrapi.min.js"></script>
+
+
+    
+
+</head>
+<body onload="hidePolynomials()">
+    <h1>Polynomial Solver and Grapher</h1>
+    <h4>Presented by Cesar Al Ayache</h4>
+    <div id="choice">
+        <h2>Choose your polynomial: 
+            <br>
+            <form>
+            <input type="radio" id="choosequadratic" name="options" onchange="showPolynomial('quadratic')"> Quadratic
+            <input type="radio" id="choosecubic" name="options" onchange="showPolynomial('cubic')"> Cubic
+            <input type="radio" id="choosequartic" name="options" onchange="showPolynomial('quartic')"> Quartic
+            </form>
+         </h2>
+    </div>
+    <div id="polynomial">
+        <p id="quadratic" class="polynomial"><input class="polynomialInput" type="number" id="1">x<sup>2</sup>+<input class="polynomialInput" type="number" id="2">x+<input class="polynomialInput" type="number" id="3"> = 0</p>
+        <p id="cubic" class="polynomial"><input class="polynomialInput" type="number" id="4">x<sup>3</sup>+<input class="polynomialInput" type="number" id="5">x<sup>2</sup>+<input class="polynomialInput" type="number" id="6">x+<input class="polynomialInput" type="number" id="7"> = 0</p>
+        <p id="quartic" class="polynomial"><input class="polynomialInput" type="number" id="8">x<sup>4</sup>+<input class="polynomialInput" type="number" id="9">x<sup>3</sup>+<input class="polynomialInput" type="number" id="10">x<sup>2</sup>+<input class="polynomialInput" type="number" id="11">x+<input class="polynomialInput" type="number" id="12"> = 0</p>
+    </div>
+    <div id="submit"><button id="button" onclick="calculateRoots()">Submit</button></div>
+    <div id="roots">
+        <pre id="root"></pre>
+    </div>
+    <div id="graph">
+        
+    </div>
+    
+
+    <script src="polynomial.js"></script>
+    
+
+</body>
+</html>
